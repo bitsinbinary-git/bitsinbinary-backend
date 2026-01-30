@@ -40,7 +40,6 @@ export const sendWelcomeEmail = async (email, name) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log('Welcome email sent successfully');
   } catch (error) {
     console.error('Error sending welcome email:', error);
     throw new Error('Failed to send welcome email');
